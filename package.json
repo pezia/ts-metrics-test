@@ -12,14 +12,14 @@
     "@types/react-dom": "^16.9.8",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1",
-    "typescript": "^3.7.5"
+    "react-scripts": "3.4.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "tsdepend": "tsdepend test"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -35,5 +35,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "codemetrics-cli": "^1.0.1",
+    "tsdepend": "^1.0.0",
+    "typescript": "^3.9.5"
   }
 }

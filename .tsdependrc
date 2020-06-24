@@ -1,0 +1,21 @@
+{
+  "cycle": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "!src/**/*.test.ts",
+    "!src/**/*.test.tsx",
+    "!src/**/*.spec.ts"
+  ],
+  "layeredArchitecture": {
+    "layer": {
+      "app": ["src/App.tsx"],
+      "page": ["src/pages/**/*.tsx"],
+      "pageComponent": ["src/components/**/*.tsx"]
+    },
+    "accessedBy": {
+      "app": [],
+      "page": ["app"],
+      "pageComponent": ["page"]
+    }
+  }
+}
